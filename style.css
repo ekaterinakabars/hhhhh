@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1442px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.header__logo {
+  background-image: url(img/projeco-logo-black.png);
+  width: 80px;
+  height: 18px;
+}
+
+.menu {
+  width: 50%;
+  max-width: 440px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.header_item {
+  text-transform: uppercase;
+}
+
+.header__item-link {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #48555b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__item-link:hover {
+  color: rgba(0, 164, 229, 1);
+}
+
+/* @media (min-width: 400px) {
+  .header {
+    background-color: purple;
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+    background-color: red;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    background-color: blue;
+  }
+} */
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+    background-color: aqua;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-bottom: 1rem;
+  }
+
+  .menu {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  .menu {
+    flex-direction: column;
+    width: 50%;
+  }
+  .header__item-link:hover {
+    background-color: darkblue;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid gray;
+}
+
+.section__blok {
+  width: 30%;
+  border: 1px solid gray;
+  padding: 7rem 5rem;
+}
+
+@media (max-width: 900px) {
+  /* width: 1000px;} */
+  .po {
+    width: 100%;
+  }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    /* max-width: 700px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section__blok {
+    width: 100%;
+  }
+}
